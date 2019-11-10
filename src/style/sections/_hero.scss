@@ -1,0 +1,159 @@
+#hero {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px;
+  background: $white-color;
+  font-weight: 400;
+  color: $dark-blue-text;
+  padding: 0rem 5.6rem;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+
+  // If you want to set a background image on the hero section, uncomment these with yout custom image
+
+  /* background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover; */
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+      text-align: center;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+
+    @include respond(tab-port) {
+      justify-content: center;
+    }
+
+    & a, button {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @keyframes move-left-right {
+  0% {
+    transform: translateX(-10px); 
+  }
+  50% {
+    transform: translateX(10px); 
+  }
+  100% {
+    transform: translateX(-10px); 
+    } 
+  }
+
+  .squares {
+    -webkit-animation: move-left-right 1s infinite;
+    animation: move-left-right 1s infinite;
+    background: #031c6d;
+    background: -webkit-linear-gradient(0deg, #031c6d 0%, #2355fa 100%);
+    background: -o-linear-gradient(0deg, #031c6d 0%, #2355fa 100%);
+    background: -moz-linear-gradient(0deg, #031c6d 0%, #2355fa 100%);
+    background: linear-gradient(0deg, #031c6d 0%, #2355fa 100%);
+    position: absolute;
+    transition: 0.5s ease-out; 
+    overflow: hidden;
+    border-radius: 20%;
+  }
+    .squares.square1 {
+      -webkit-animation: move-left-right 4s infinite;
+      animation: move-left-right 4s infinite;
+      height: 300px;
+      width: 300px;
+      opacity: 0.5;
+      left: 3%;
+      top: -21%;
+    }
+    .squares.square2 {
+      -webkit-animation: move-left-right 6s infinite;
+      animation: move-left-right 6s infinite;
+      height: 400px;
+      width: 400px;
+      opacity: 0.4;
+      right: 1%;
+      top: -12%;
+    }
+    .squares.square3 {
+      -webkit-animation: move-left-right 5s infinite;
+      animation: move-left-right 5s infinite;
+      height: 200px;
+      width: 200px;
+      opacity: 0.1;
+      left: -5%;
+      bottom: 2%;
+    }
+     .squares.square4 {
+      -webkit-animation: move-left-right 10s infinite;
+      animation: move-left-right 10s infinite;
+      height: 100px;
+      width: 100px;
+      opacity: 0.9;
+      right: 27%;
+      top: 80%;
+    }
+     .squares.square5 {
+      -webkit-animation: move-left-right 6s infinite;
+      animation: move-left-right 6s infinite;
+      height: 250px;
+      width: 250px;
+      opacity: 0.1;
+      left: 32%;
+      bottom: 29%;
+    }
+     .squares.square6 {
+      -webkit-animation: move-left-right 9s infinite;
+      animation: move-left-right 9s infinite;
+      left: 10%;
+      top: 35%;
+      height: 80px;
+      width: 80px;
+      opacity: 0.8;
+    }
+     .squares.square7 {
+      -webkit-animation: move-left-right 3s infinite;
+      animation: move-left-right 3s infinite;
+      width: 300px;
+      height: 300px;
+      right: 2%;
+      bottom: 3%;
+      opacity: 0.1;
+    }
+  
+}
+
+
+
