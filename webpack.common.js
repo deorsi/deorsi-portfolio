@@ -11,13 +11,16 @@ module.exports = {
         test: /\.html$/,
         use: ['html-loader']
       },
+      { test: /\.pdf$/, 
+        use: 'url-loader'
+      },
       {
-        test: /\.(jpg|jpeg|png|gif|svg|pdf)$/,
+        test: /\.(pdf|jpg|jpeg|png|gif|svg)$/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              name: '[name].[hash].[ext]',
+              name: '[name].[ext]',
               outputPath: 'assets'
             },
           },
