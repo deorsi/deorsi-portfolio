@@ -2,9 +2,9 @@ Personal Portfolio inspired on another one made by Jacobo Martínez - https://gi
 
 Built with:
 
-Webpack - Static module bundler
-Bootstrap 4 - Front-end component library
-Sass - CSS extension language
-ScrollReveal.js - JavaScript library
+> Webpack - Static module bundler;
+> Bootstrap 4 - Front-end component library;
+> Sass - CSS extension language;
+> ScrollReveal.js - JavaScript library;
 
 
